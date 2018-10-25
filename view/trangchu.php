@@ -1,13 +1,8 @@
 <?php
-	$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
-	mysqli_set_charset($conn, 'UTF8');
-    if ($conn->connect_error) 
-    { 
-        die("Không thể kết nối CSDL. Code: " . $conn->connect_error); 
-    }
-    $result = $conn->query("SELECT * FROM products WHERE id_cate = 1 ORDER by id desc LIMIT 0,3");
-    $result1 = $conn->query("SELECT * FROM products WHERE id_cate = 2 ORDER by id desc LIMIT 0,3");
-    $result2 = $conn->query("SELECT * FROM products WHERE id_cate = 3 ORDER by id desc LIMIT 0,3");
+	include "core/mysql.php";
+    $result = $db->query("SELECT * FROM products WHERE id_cate = 1 ORDER by id desc LIMIT 0,3");
+    $result1 = $db->query("SELECT * FROM products WHERE id_cate = 2 ORDER by id desc LIMIT 0,3");
+    $result2 = $db->query("SELECT * FROM products WHERE id_cate = 3 ORDER by id desc LIMIT 0,3");
 
 ?>
 
@@ -19,9 +14,9 @@
 	</div>
 	<div class="panel-body">
 		<?php
-			if ($result->num_rows > 0) 
+			if ($result) 
             {
-               	while ($row = $result->fetch_assoc()) 
+               	while ($row = $result->fetch()) 
                 {
         ?>
                 	<div class="col-md-4" style="padding-left: 2px; padding-right: 2px;">
@@ -48,9 +43,9 @@
 
 	<div class="panel-body">
 		<?php
-			if ($result1->num_rows > 0) 
+			if ($result1) 
             {
-               	while ($row1 = $result1->fetch_assoc()) 
+               	while ($row1 = $result1->fetch()) 
                 {
         ?>
                 	<div class="col-md-4" style="padding-left: 2px; padding-right: 2px;">
@@ -76,9 +71,9 @@
 	</div>
 	<div class="panel-body">
 		<?php
-			if ($result2->num_rows > 0) 
+			if ($result2) 
             {
-               	while ($row2 = $result2->fetch_assoc()) 
+               	while ($row2 = $result2->fetch()) 
                 {
         ?>
                 	<div class="col-md-4" style="padding-left: 2px; padding-right: 2px;">
