@@ -16,7 +16,7 @@
                                     <i class="fa  fa-home fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
+                                    <div class="huge">ADM</div>
                                     <div style="font-size: 13px">Trang Chủ Admin</div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                     <i class="fa  fa-user fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
+                                    <div class="huge"><?php include"admin/view/count/admin.php" ?></div>
                                     <div>Quản Lý Admin!</div>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                                     <i class="fa fa-user fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
+                                    <div class="huge"><?php include"admin/view/count/user.php" ?></div>
                                     <div>Quản Lý User</div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                     <i class="fa fa-list fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
+                                    <div class="huge"><?php include"admin/view/count/product.php" ?></div>
                                     <div>Quản Lý Product</div>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                                     <i class="fa fa-list fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
+                                    <div class="huge">3</div>
                                     <div>Quản Lý Thể Loại</div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                                     <i class="fa fa-shopping-cart fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
+                                    <div class="huge"><?php include"admin/view/count/cart.php" ?></div>
                                     <div>Quản Lý Giỏ Hàng</div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@
                                     <i class="fa fa-envelope-o fa-4x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
+                                    <div class="huge"><?php include"admin/view/count/feedback.php" ?></div>
                                     <div>Quản Lý Phản Hồi</div>
                                 </div>
                             </div>

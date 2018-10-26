@@ -9,7 +9,7 @@
 ?>
 
 <?php
-	include("admin/view/top-menu.php");
+	include"admin/view/admin-menu.php";
 ?>
 
 <div class="panel panel-info">

@@ -7,7 +7,7 @@
 	else $sl = 1;
 	$trangthai = "Ðã nhận đơn hàng";
 	if (!isset($_SESSION["user"])) {
-		echo "Bạn cần đăng nhập trước khi đặt xe!";
+		echo "Bạn cần đăng nhập trước!";
 		exit;
 	}
 	if($sl==0) $sl=1;
