@@ -242,6 +242,19 @@
 					echo "<script type='text/javascript'> history.go(-1);</script>";
 				}
 			}
+			case "delete-product":
+			{
+				if ($_SESSION['id']!=0 && $_SESSION['role']==1)
+				{
+					include("admin/core/delete-product.php");
+					break;
+				}
+				else
+				{
+					echo "<script type='text/javascript'> alert('Bạn ko được cấp quyền này!'); </script>";
+					echo "<script type='text/javascript'> history.go(-1);</script>";
+				}
+			}
 			case "delete-admin":
 			{
 				if ($_SESSION['id']!=0 && $_SESSION['role']==1)
@@ -375,10 +388,11 @@
 					echo "<script type='text/javascript'> history.go(-1);</script>";
 				}
 			}
-			case "add-produc":{
+			case "add-product":
+			{
 				if ($_SESSION['id']!=0 && $_SESSION['role']==1)
 				{
-					include("admin/core/add-produc.php");
+					include("admin/core/add-product.php");
 					break;
 				}
 				else
@@ -386,7 +400,34 @@
 					echo "<script type='text/javascript'> alert('Bạn ko được cấp quyền này!'); </script>";
 					echo "<script type='text/javascript'> history.go(-1);</script>";
 				}
-			}		
+			}
+			case "edit-product":
+			{
+				if ($_SESSION['id']!=0 && $_SESSION['role']==1)
+				{
+					include("admin/view/edit-product.php");
+					break;
+				}
+				else
+				{
+					echo "<script type='text/javascript'> alert('Bạn ko được cấp quyền này!'); </script>";
+					echo "<script type='text/javascript'> history.go(-1);</script>";
+				}
+			}
+			case "do-edit-product":
+			{
+				if ($_SESSION['id']!=0 && $_SESSION['role']==1)
+				{
+					include("admin/core/do-edit-product.php");
+					break;
+				}
+				else
+				{
+					echo "<script type='text/javascript'> alert('Bạn ko được cấp quyền này!'); </script>";
+					echo "<script type='text/javascript'> history.go(-1);</script>";
+				}
+			}
+					
 		}
 	?>
 </div>

@@ -42,8 +42,8 @@ foreach ($result as $row) {
 							<td style="text-align: center;"> <?php echo $row['detail']; ?> </td>
 							<td style="text-align: center;"> <?php echo $row['id_cate']; ?> </td>
 							<td style="text-align: center;">
-								<button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> </button>
-								<button class="btn btn-danger" style="margin-top: 20px"><span class="glyphicon glyphicon-trash"></span> </button>
+              <button class="btn btn-warning"><span class="glyphicon glyphicon-pencil" onclick="window.location.href='?thread=edit-product&id-product=<?php echo $row['id'];  ?>'"></span> </button>
+							<button class="btn btn-danger" style="margin-top: 5px"><span class="glyphicon glyphicon-trash" onclick="if( confirm('Bạn có chắc chắn muốn xoá không!'))window.location.href='?thread=delete-product&id-product=<?php echo $row['id'];  ?>'"></span> </button>
 							</td>
 						</tr>
 				<?php
