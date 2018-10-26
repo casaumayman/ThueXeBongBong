@@ -6,7 +6,7 @@
 	if (isset($_POST["sl"])) $sl = addslashes($_POST['sl']);
 	else $sl = 1;
 	$trangthai = "Ðã nhận đơn hàng";
-	if (!isset($_SESSION["user"])) {
+	if (!isset($_SESSION["id"])) {
 		echo "Bạn cần đăng nhập trước!";
 		exit;
 	}
