@@ -1,13 +1,7 @@
 <?php
     $id_users = $_SESSION['id'];
-
-    $conn = new mysqli($db_host, $db_username, $db_password, $db_name);
-    mysqli_set_charset($conn,"utf8");
-    if ($conn->connect_error) 
-    { 
-        die("Không thể kết nối CSDL. Code: " . $conn->connect_error); 
-    }
-    $result = $conn->query("SELECT * FROM `carts` WHERE id_users={$id_users}");
+    include "core/mysql.php";
+    $result = $db->query("SELECT * FROM `carts` WHERE id_users={$id_users}");
     $tongtien=0;
 ?>
 
@@ -31,17 +25,19 @@
                     <tbody>
                         <?php
                             $i=1;
-                            if ($result->num_rows > 0) 
+                            if ($result) 
                             {
-                                while($row = $result->fetch_assoc()) 
+                                while($row = $result->fetch()) 
                                 {
+                                    $sl = $row["sl"];
                                     $id_products = $row['id_products'];
-                                    $result1 = $conn->query("SELECT * FROM `products` WHERE id={$id_products}");
-                                    if ($result1->num_rows > 0) 
+                                    $result1 = $db->query("SELECT * FROM `products` WHERE id={$id_products}");
+                                    if ($result1) 
                                     {
-                                        while($row1 = $result1->fetch_assoc()) 
+                                        while($row1 = $result1->fetch()) 
                                         {
-                                            $tongtien+=$row1['price'];
+                                            $sl = 
+                                            $tongtien+=$row1['price'] * $sl;
                         ?>
                                             <tr class="odd gradeX">
                                                 <td style="text-align: center;"><?php echo $i++; ?></td>
@@ -87,12 +83,6 @@
                 
             </div>
         </div>
-    </div>
-    
-    <div class="col-md-3">
-        <?php
-            include("lib/right-menu.php");
-        ?>
     </div>
 </div>
 
