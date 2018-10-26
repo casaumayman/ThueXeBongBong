@@ -24,7 +24,7 @@
 					<p style="font-size: 15px">Giá cũ: <del><?php echo number_format($row['price'] + 0.33*$row['price']); ?> VNÐ</del></p>
 					<div style="margin-top: 30px;">
 						<?php
-							if ($_SESSION['id'] != 0)
+							if (isset($_SESSION['id']))
 							{
 						?>		
 								<form class="form-horizontal" method="POST" action="?thread=them-vao-gio-hang&id-xe=<?php echo $row['id']?>">

@@ -1,12 +1,15 @@
 <?php
 	include "core/mysql.php";
-	$id_nguoidung = $_SESSION['id'];
+	if (isset($_SESSION["id"])) $id_nguoidung = $_SESSION['id'];
 	$ngaymua = date("Y-m-d");
 	$id_sanpham = addslashes($_GET['id-xe']);
 	if (isset($_POST["sl"])) $sl = addslashes($_POST['sl']);
 	else $sl = 1;
 	$trangthai = "Ðã nhận đơn hàng";
-
+	if (!isset($_SESSION["user"])) {
+		echo "Bạn cần đăng nhập trước khi đặt xe!";
+		exit;
+	}
 	if($sl==0) $sl=1;
 
 	// kiem tra xem ma hang da dat mua chua?

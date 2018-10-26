@@ -23,7 +23,7 @@
 </head>
 <body>
 	<?php
-		session_start();
+		if (!isset($_SESSION)) session_start();
 		header('Content-Type: text/html; charset=UTF-8');
 		require_once("core/mysql.php");
 	?>
