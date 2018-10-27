@@ -6,10 +6,6 @@
 	if (isset($_POST["sl"])) $sl = addslashes($_POST['sl']);
 	else $sl = 1;
 	$trangthai = "Ðã nhận đơn hàng";
-	if (!isset($_SESSION["id"])) {
-		echo "Bạn cần đăng nhập trước!";
-		exit;
-	}
 	if($sl==0) $sl=1;
 
 	// kiem tra xem ma hang da dat mua chua?
