@@ -6,7 +6,7 @@
 	<title>Website cho thuê xe máy</title>
 	<link rel="shortcut icon" href="logoo.jpg" type="image/x-icon"/>
 	<meta name="keyword" content="thue xe máy, thuê xe, thue xe may, thue xe may tphcm, thuê xe giá rẻ">
-	<meta name="author" content="Phạm Thị Hoa">
+	<meta name="author" content="Phạm Thị Hoa, Huỳnh Huy Tuấn, Nguyễn Thuý Vy">
 	<meta name="descreption" content="Website cho thuuee xe máy giá rẻ hàng đầu, chất lượng, uy tín">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,10 +20,11 @@
 
 	<script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- câu lệnh phù hợp với điện thoại-->
 </head>
 <body>
 	<?php
-		if (!isset($_SESSION)) session_start();
+		
 		header('Content-Type: text/html; charset=UTF-8');
 		require_once("core/mysql.php");
 	?>

@@ -27,7 +27,7 @@
 	<div class="fusion-text" style="margin-top: 25px;margin-left: 30px;margin-right: 30px">
 		<p>
 			<span style="color: #003300;"><strong>Website</strong></span>
-			<span style="color: #ff0000;"><strong>................</strong></span>
+			<span style="color: #ff0000;"><strong><a href="https://thuexebongbong.000webhostapp.com/" target="_blank" style="color: #ff0000"> Thuê Xe Bông Bông </a> </strong></span>
 		</p>
 	</div>
 	<div class="fusion-text" style="margin-top: 25px;margin-left: 30px;margin-right: 30px">
@@ -39,8 +39,9 @@
 			<span style="color: #003300;">phục vụ khách hàng trong và ngoài nước thuê xe gắn máy, thủ tục đơn giản nhanh chóng, cho thuê theo ngày, tuần, tháng và dài hạn, có giao xe tận nơi</span></div>
 		<div>
 			<strong>Liên hệ: </strong>
-			<span style="color: #ff0000;"><strong>01654036388</strong><strong><span style="color: #333399;"> (Ms. Hoa)</span></strong></span>
-			
+			<span style="color: #ff0000;"><strong> 035.403.6388</strong><strong><span style="color: #333399;"> (Ms. Hoa)</span></strong></span>
+			<span style="color: #ff0000;"><strong>- 093.802.9040</strong><strong><span style="color: #333399;"> (Mr. Tuấn)</span></strong></span>
+			<span style="color: #ff0000;"><strong>- 0989.285.600</strong><strong><span style="color: #333399;"> (Ms. Vy)</span></strong></span>
 			<div>
 				<strong>
 					<span style="color: #333300;">Email:</span>

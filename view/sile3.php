@@ -16,7 +16,7 @@
 <div class="panel panel-green">
 	<div class="panel-heading"><b>Fanpage</b></div>
 	<div class="panel-body">
-		<div class="fb-page" data-href="https://www.facebook.com/thuexemayhcm/" data-tabs="timeline" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thuexemayhcm/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thuexemayhcm/">Cho thuê xe máy thành phố Hồ Chí Minh</a></blockquote></div>
+	<div class="fb-page" data-href="https://www.facebook.com/thuexemaydonghoi/" data-tabs="timeline" data-height="100px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thuexemaydonghoi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thuexemaydonghoi/">Cho Thuê Xe Máy Đồng Hới Quảng Bình</a></blockquote></div>
 	</div>
 </div>
 <div class="panel panel">

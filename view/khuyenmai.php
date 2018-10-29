@@ -10,7 +10,7 @@
 
 
 <div class="panel panel-info" style="margin-top: 15px;">
-	<div class="panel-heading"><a href="?thread=khuyen-mai" style="font-size: 25px; color: #ff00cc; "> KHUYẾN MÃI - <img height='20px' width='109px' src="images/datxe.gif"/> 01654036388 - Ms: Hoa </a>
+	<div class="panel-heading"><a href="?thread=khuyen-mai" style="font-size: 25px; color: #ff00cc; "> KHUYẾN MÃI - <img height='20px' width='109px' src="images/datxe.gif"/> 0989.285.600 - Ms.VY </a>
 	</div>
 	<div class="panel-body">
 		<?php

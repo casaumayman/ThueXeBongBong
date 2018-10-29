@@ -10,7 +10,7 @@
 	include("view/slider.php");
 ?>
 <div class="panel panel-info" style="margin-top: 15px;">
-	<div class="panel-heading"><p style="font-size: 25px; color: #ff00cc; "><a href="?thread=khuyen-mai" > KHUYẾN MÃI </a>- <img height='20px' width='109px' src="images/datxe.gif"/> 01654036388 - Ms: Hoa</p>
+	<div class="panel-heading"><p style="font-size: 25px; color: #ff00cc; "><a href="?thread=khuyen-mai" > KHUYẾN MÃI </a>- <img height='20px' width='109px' src="images/datxe.gif"/> 0989.285.600 - Ms: VY</p>
 	</div>
 	<div class="panel-body">
 		<?php
@@ -28,18 +28,17 @@
 						</div>
 						<div style="text-align: center;">
 							<p>
-								<b style="color: red;">Giá: <?php echo $row['price']; ?> VNĐ/ ngày</b> 
+							<b style="color: red;">Giá: <?php echo $row['price']; ?> VNĐ/ ngày</b> 
 								<span> | </span> 
 								<?php
 									if (isset($_SESSION["id"])) {
 								?>
-								<button class="btn btn-info" onclick="window.location.href='?thread=them-vao-gio-hang&id-xe=<?php echo $row['id']?> '">Thuê Ngay</button>
+								 <button class="btn btn-info" onclick="window.location.href='?thread=them-vao-gio-hang&id-xe=<?php echo $row['id']?> '">Thuê Ngay</button>
 								<?php
 									} else {
 								?>
 								<button class="btn btn-danger" data-toggle="modal" data-target="#ModalLogin1">Thuê ngay</button>
 								<?php } ?>
-							</p>
 						</div>
 					</div>
 		<?php
@@ -50,7 +49,7 @@
 </div>
 <div class="panel panel-info" style="margin-top: 15px;">
 	<div class="panel-heading">
-		<p style="font-size: 25px; color: #ff00cc"><a href="?thread=tay-ga"> XE TAY GA</a> - <img height='20px' width='109px' src="images/datxe.gif"/> 01654036388 - Ms: Hoa</p>
+		<p style="font-size: 25px; color: #ff00cc"><a href="?thread=tay-ga"> XE TAY GA</a> - <img height='20px' width='109px' src="images/datxe.gif"/> 035.403.6388 - Ms: HOA</p>
 	</div>
 
 	<div class="panel-body">
@@ -90,7 +89,7 @@
 </div>
 
 <div class="panel panel-info" style="margin-top: 15px;">
-	<div class="panel-heading"><p style="font-size: 25px; color: #ff00cc"><a href="?thread=xe-so">XE SỐ</a>  - <img height='20px' width='109px' src="images/datxe.gif"/> 01654036388 - Ms: Hoa</p>
+	<div class="panel-heading"><p style="font-size: 25px; color: #ff00cc"><a href="?thread=xe-so">XE SỐ</a>  - <img height='20px' width='109px' src="images/datxe.gif"/> 093.802.9040 - Mr: TUẤN</p>
 	</div>
 	<div class="panel-body">
 		<?php

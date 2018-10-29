@@ -9,7 +9,7 @@
 ?>
 
 <div class="panel panel-info" style="margin-top: 15px;">
-	<div class="panel-heading"><p style="font-size: 25px; color: #ff00cc"><a href="?thread=xe-so">XE SỐ</a>  - <img height='20px' width='109px' src="images/datxe.gif"/> 01654036388 - Ms: Hoa</p>
+	<div class="panel-heading"><p style="font-size: 25px; color: #ff00cc"><a href="?thread=xe-so">XE SỐ</a>  - <img height='20px' width='109px' src="images/datxe.gif"/> 093.802.9040 - Mr: TUẤN</p>
 	</div>
 	<div class="panel-body">
 		<?php
