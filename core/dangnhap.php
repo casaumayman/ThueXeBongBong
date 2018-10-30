@@ -21,7 +21,6 @@
 	$_SESSION['id'] = $member['id'];
 	$_SESSION['username'] = $member['username'];
 	$_SESSION['role'] = $member['role'];
-	$_SESSION["numbersOfProduct"] = NULL;
 
 	echo "<script language='JavaScript'> alert('Bạn đã đăng nhập thành công!'); </script>";
 	echo "<meta http-equiv='refresh' content='0; index.php?thread=trang-chu'>";

@@ -1,11 +1,6 @@
 <?php
-	$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
-  	//mysqli_set_charset($conn, 'UTF8');
-  if ($conn->connect_error) 
-  { 
-    die("Không thể kết nối CSDL. Code: " . $conn->connect_error); 
-  }
-  $result = $conn->query("SELECT * FROM feedbacks");
+	include "core/mysql.php";  
+  	$result = $db->query("SELECT * FROM feedbacks");
 ?>
 
 
@@ -32,7 +27,7 @@
             <tbody>
 				<?php
 					$i=1;
-					while($row = $result->fetch_assoc())
+					while($row = $result->fetch())
 					{
 				?>
 						<tr>

@@ -12,8 +12,8 @@
 					<div class="col-md-9">
 						<select class="form-control" name="subject">
 							<option>1. Phản hồi về thái độ phục vụ</option>
-							<option>2. Phản hồi về chất lượng xe </option>
-							<option>3. Phản hồi khác </option>
+							<option>2. Phản hồi về chất lượng xe</option>
+							<option>3. Phản hồi khác</option>
 						</select>
 					</div>
 				</div>
@@ -21,9 +21,9 @@
 				<div class="form-group">
 					<label class="col-md-3" style="text-align: center;">Nội dung: </label>
 					<div class="col-md-9">
-						<textarea name="content" required></textarea>
+					<textarea class="form-control" rows="5" name="content"></textarea>
 						<script>
-							CKEDITOR.replace( 'content' );
+							CKEDITOR.replace('content');
 						</script>
 					</div>
 				</div>
